@@ -6,12 +6,12 @@
     >
     <v-spacer></v-spacer>
     <v-hover v-slot="{ hover }">
-      <v-btn class="mx-2" :color="hover ? 'amber darker-2' : ''" outlined
+      <v-btn plain outlined class="mx-2" :color="hover ? 'amber darker-2' : ''"
         >Buy</v-btn
       >
     </v-hover>
     <v-hover v-slot="{ hover }">
-      <v-btn class="mx-2" :color="hover ? 'amber darken-2' : ''" outlined
+      <v-btn plain outlined class="mx-2" :color="hover ? 'amber darken-2' : ''"
         >Sell</v-btn
       >
     </v-hover>
@@ -24,7 +24,7 @@
       label="Search Properties by Area/Zip Code"
     >
       <template v-slot:append>
-        <v-btn color="amber darken-2">
+        <v-btn color="amber darken-2" text plain>
           <v-icon>mdi-magnify</v-icon>
         </v-btn>
       </template>
