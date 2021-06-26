@@ -1,16 +1,10 @@
 <template>
   <v-app>
-    <v-app-bar app>
-      <Header />
-    </v-app-bar>
-
-    <v-main class="grey lighten-2">
+    <Header />
+    <v-main>
       <nuxt />
     </v-main>
-
-    <v-footer app>
-      <Footer />
-    </v-footer>
+    <Footer />
   </v-app>
 </template>
 

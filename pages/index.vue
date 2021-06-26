@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="grey lighten-2">
     <v-row class="mt-2 justify-center">
       <v-col cols="12" lg="2">
         <v-sheet class="grey lighten-4" min-height="102vh">
