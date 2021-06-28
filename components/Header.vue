@@ -17,17 +17,13 @@
     </v-hover>
     <v-spacer></v-spacer>
     <v-text-field
-      class="mx-16 mt-7"
+      class="mx-16 mt-6"
       dense
       outlined
       color="amber darken-2"
       label="Search Properties by Area/Zip Code"
     >
-      <template v-slot:append>
-        <v-btn color="amber darken-2" text plain>
-          <v-icon>mdi-magnify</v-icon>
-        </v-btn>
-      </template>
+      <v-icon right slot="append" color="amber darken-2">mdi-magnify</v-icon>
     </v-text-field>
     <v-spacer></v-spacer>
     <v-badge right color="amber darken-1" dot overlap>
