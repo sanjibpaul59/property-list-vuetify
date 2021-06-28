@@ -19,62 +19,19 @@
         </v-sheet>
       </v-col>
       <v-col cols="12" lg="9">
-        <!-- <v-sheet class="grey lighten-4 mb-5" min-height="10vh">
-          
-        </v-sheet> -->
-        <v-card class="grey lighten-4 mb-5" flat min-height="10vh">
-          <v-row class="justify-center">
-            <v-col cols="12" lg="2" class="mt-4">
-              <v-btn
-                large
-                text
-                plain
-                class="grey--text text--darken-1 text-capitalize ml-2"
-                >All <v-icon right>mdi-chevron-down</v-icon></v-btn
-              >
-            </v-col>
-            <v-divider light vertical inset></v-divider>
-            <v-col cols="12" lg="3" class="mt-4">
-              <v-btn
-                large
-                text
-                plain
-                class="grey--text text--darken-1  text-capitalize"
-                ><v-icon left>mdi-google-maps</v-icon> Location</v-btn
-              >
-            </v-col>
-            <v-divider light vertical inset></v-divider>
-            <v-col cols="12" lg="3" class="mt-4">
-              <v-btn
-                large
-                text
-                plain
-                class="grey--text text--darken-1  text-capitalize"
-              >
-                <v-icon left>mdi-home-modern</v-icon> Property Type</v-btn
-              >
-            </v-col>
-            <v-divider light vertical inset></v-divider>
-            <v-col cols="12" lg="4" class="mt-4">
-              <v-btn
-                large
-                text
-                plain
-                class="grey--text text--darken-1 text-capitalize"
-              >
-                <v-icon left>mdi-cash-multiple</v-icon> Budget</v-btn
-              >
-            </v-col>
-          </v-row>
-        </v-card>
-        <v-sheet class="grey lighten-4" min-height="90vh"></v-sheet>
+        <search-card />
+        <properties />
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-export default {}
+import Properties from "../components/Properties.vue"
+import SearchCard from "../components/SearchCard.vue"
+export default {
+  components: { Properties },
+}
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" SearchCardscoped></style>
