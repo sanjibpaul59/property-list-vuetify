@@ -1,6 +1,9 @@
 <template>
   <v-sheet class="grey lighten-2" min-height="90vh">
     <property />
+    <property />
+    <property />
+    <property />
   </v-sheet>
 </template>
 
