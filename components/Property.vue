@@ -88,7 +88,12 @@
                 Expected Turn Over
               </p>
             </div>
-            <v-divider vertical light class="mx-4"></v-divider>
+            <v-divider
+              vertical
+              light
+              class="mx-4 mt-2"
+              style="height:70px;"
+            ></v-divider>
             <div class="ma-2">
               <p class="subtitle-2 ma-0">Total Tokens</p>
               <p class="title">500</p>
@@ -97,7 +102,7 @@
               </p>
             </div>
           </div>
-          <div class="ml-12 mt-n2 text-center">
+          <div class=" mt-n2 text-center">
             <v-btn color="amber" outlined class="black--text rounded-xl "
               ><p class="grey--text text--darken-4 pt-5 font-weight-bold">
                 View Details
@@ -123,5 +128,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$divider-max-height: "2px";
+$divider-max-height: 1.5rem;
 </style>
