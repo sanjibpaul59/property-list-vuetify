@@ -5,7 +5,7 @@
       max-height="280px"
       max-width="340px"
       style="flex-basis: 125px"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+      :src="image"
     ></v-img>
     <v-card
       class="rounded-lg mt-4 ml-n4"
@@ -51,7 +51,7 @@
                 </div>
                 <div class="black--text">
                   Status: &nbsp; &nbsp;
-                  <span class="pink--text text--darken-1">Fully Rented</span>
+                  <span :class="status.color">{{ status.name }}</span>
                 </div>
               </v-col>
             </v-row>
@@ -124,6 +124,16 @@ export default {
   data: () => ({
     absolute: true,
   }),
+  props: {
+    image: {
+      type: URL,
+      default:
+        "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2UlMjBidWlsZGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+    },
+    status: {
+      type: Object,
+    },
+  },
 }
 </script>
 

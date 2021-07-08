@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app>
+  <v-app-bar app dark flat>
     <v-toolbar-title class="mx-16">
       <span class="amber--text text--darken-2">EST</span>ATE
       Inc.</v-toolbar-title
@@ -16,15 +16,22 @@
       >
     </v-hover>
     <v-spacer></v-spacer>
+
     <v-text-field
-      class="mx-16 mt-6"
       dense
       outlined
+      hide-details
+      single-line
       color="amber darken-2"
-      label="Search Properties by Area/Zip Code"
     >
-      <v-icon right slot="append" color="amber darken-2">mdi-magnify</v-icon>
+      <template v-slot:label>
+        Search Properties by Area/Zip Code
+      </template>
+      <template v-slot:append>
+        <v-icon right class="pa-2" color="amber darken-2">mdi-magnify</v-icon>
+      </template>
     </v-text-field>
+
     <v-spacer></v-spacer>
     <v-badge right color="amber darken-1" dot overlap>
       <span slot="badge"></span>

@@ -21,53 +21,15 @@
         </v-row>
       </v-card-title>
     </v-card>
-    <v-card class="rounded-0" light height="18vh">
-      <v-card-title class="subtitle-1 font-weight-medium">
-        Budget
-        <v-spacer></v-spacer>
-        <v-btn text
-          ><v-divider
-            inset
-            dark
-            style="border:1px solid grey; width:25px;"
-          ></v-divider
-        ></v-btn>
-      </v-card-title>
-      <v-card-text class="ml-3">
-        <v-row>
-          <v-col>
-            <v-btn
-              small
-              outlined
-              class="rounded-pill text-start"
-              color="grey darken-2"
-              >value</v-btn
-            >
-          </v-col>
-          <v-col>
-            <v-btn small outlined class="rounded-pill" color="grey darken-2"
-              >value</v-btn
-            >
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col>
-            <v-range-slider
-              hint="Im a hint"
-              max="50"
-              min="-50"
-              track-color="grey lighten-1"
-              color="amber darken-2"
-            ></v-range-slider>
-          </v-col>
-        </v-row>
-      </v-card-text>
-    </v-card>
+    <filter-content />
   </v-sheet>
 </template>
 
 <script>
-export default {}
+import FilterContent from "./FilterContent.vue"
+export default {
+  components: { FilterContent },
+}
 </script>
 
 <style lang="scss" scoped></style>
